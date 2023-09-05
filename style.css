@@ -6,23 +6,105 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-nav{
+
+
+/* ******************************************************* */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 170px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav>ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > ul{
-    display: flex;
-    justify-content: space-between;
-}
+
 nav ul li {
     list-style: none;
     margin-left: 15px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 18px;
 
 }
-.nav-titel-span{
+
+.nav-titel-span {
     color: #FF42A5;
+}
+
+.nav-titel {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.titel-logo {
+    height: 28px;
+    padding-right: 10px;
+}
+
+.titel-name {
+    display: flex;
+    align-items: center;
+}
+
+.titel-follow {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.titel-follow>a>i {
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+/* ********************* responsive for mobile **************** */
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li{
+        padding-bottom: 25px;
+    }
+    .titel-follow {
+        padding-right: 15px;
+        margin-left: 0px;
+        padding-left: 15px;
+        width: 200px;
+    }
+}
+
+
+/* ****************** responsive for tablet ******************* */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    nav{
+        padding: 0 50px;
+        
+    }
 }
