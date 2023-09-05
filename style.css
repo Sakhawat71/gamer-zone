@@ -94,7 +94,8 @@ nav a {
 
 /* ********************* banner ************************ */
 
-.banner {
+.banner,
+.play-games {
     display: flex;
     padding: 0 170px;
     align-items: center;
@@ -136,6 +137,144 @@ nav a {
     width: 100%;
 }
 
+/* ************************** online games *********************** */
+.online-games-container {
+    margin: 100px 170px 150px 170px;
+    /* margin-top: 100px; */
+
+}
+
+/* online-games-container */
+
+.online-games-videos {
+    text-align: center;
+}
+
+.online-games-videos h1 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+.online-funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-videos-cintainer {
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    width: 256px;
+    height: 270px;
+
+}
+
+.video>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .video:hover {
+    border: 1px solid greenyellow;
+} */
+
+.play-games-banner {
+    text-align: right;
+    width: 50%;
+    padding-right: 100px;
+    margin-bottom: 220px;
+}
+
+.play-games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+
+.banner-play {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.play-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.stiey-img {
+
+    width:200px;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    position: relative;
+    bottom: 200px;
+    right: 100px;
+    background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
+}
+
+.stiey-img>img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ********************* responsive for mobile **************** */
@@ -163,7 +302,8 @@ nav a {
     }
 
     /* ***************** */
-    .banner {
+    .banner,
+    .play-games {
         flex-direction: column-reverse;
         padding: 0;
     }
@@ -173,18 +313,63 @@ nav a {
         margin: 50px 50px;
         width: 60%;
         justify-content: center;
-        
+
     }
 
     .banner-images-contener {
         width: 70%;
     }
+
     .banner-play {
         font-size: 30px;
     }
-    .banner-goat{
+
+    .banner-goat {
         font-size: 50px;
     }
+
+    /* **************** */
+    .online-games-container {
+        margin: auto 60px;
+    }
+
+    .online-videos-cintainer {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .video {
+        margin-bottom: 50px;
+    }
+
+    /* ****************** paly game *************** */
+
+    .play-games {
+        flex-direction: column;
+
+    }
+
+    .play-games-banner {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-right: 0;
+        margin-bottom: 5px;
+
+    }
+
+    .stiey-img {
+        width: 150px;
+        height: 160px;
+        border-radius: 8px;
+        border: 2px solid #FFF;
+        position: relative;
+        bottom: 140px;
+        right: 60px;
+    }
+
+
 }
 
 
@@ -194,6 +379,35 @@ nav a {
 @media screen and (min-width: 577px) and (max-width: 992px) {
     nav {
         padding: 0 50px;
+    }
 
+    .online-videos-cintainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video {
+        margin-bottom: 50px;
+    }
+
+    /* .play-games{
+        flex-direction: column;
+    } */
+    .play-games-banner {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 0;
+
+    }
+
+    .banner,
+    .play-games {
+        flex-direction: column;
+        padding: 0 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
