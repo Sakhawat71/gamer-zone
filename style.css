@@ -232,6 +232,8 @@ nav a {
 
 /* footer */
 footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,9 +241,36 @@ footer{
     background-color:#0B0223;
     color: white;
 }
+.footer-link ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+.footer-link ul{
+    list-style: none;
+    display: flex;
 
-
-
+}
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer-icon a {
+    padding: 10px 20px;
+}
+.footer-trams a{
+    padding: 10px 20px;
+    color: gray;
+}
+.footer-trams{
+    margin-bottom: 30px;
+}
+.footer-p{
+    color: gray;
+}
 
 
 
@@ -376,8 +405,36 @@ footer{
         bottom: 140px;
         right: 60px;
     }
+/* ********************* footer****************** */
+    .footer-link ul , .footer-icon {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 0;
 
-
+    }
+    .footer-link ul li a{
+        padding: 0;
+    }
+    .footer-link ul li {
+        margin-bottom: 20px;
+    }
+    .footer-icon {
+        margin-top: 0;
+    }
+    .footer-icon a{
+        margin-bottom: 20px;
+    }
+    .footer-trams{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-trams a{
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .footer-p{
+        text-align: center;
+    }
 }
 
 
