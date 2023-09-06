@@ -137,14 +137,66 @@ nav a {
     width: 100%;
 }
 
+/* *********************** we-are-gamer-container ****************** */
+.we-are-gamer-container {
+    margin: 50px 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.we-gamer-img {
+    width: 55%;
+}
+
+.we-gamer-img img {
+    width: 100%;
+}
+
+.we-gamer-info {
+    width: 45%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.we-btn {
+    margin: 15px 0;
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+}
+
+.we-titel {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 34px;
+}
+.we-gamer-info p {
+    color: #534C64;
+    font-weight: 400;
+}
+.we-gamer-info h2{
+    margin: 0;
+    color:#534C64 ;
+    font-size: 22px;
+    font-weight: 700;
+}
+.we-gamer-info h4{
+    margin: 5px 0;
+    color:#534C64 ;
+}
+
+
 /* ************************** online games *********************** */
 .online-games-container {
     margin: 100px 170px 150px 170px;
-    /* margin-top: 100px; */
 
 }
 
-/* online-games-container */
 
 .online-games-videos {
     text-align: center;
@@ -252,8 +304,9 @@ nav a {
     flex: 0 1 calc(20% - 10px);
     margin: 5px 5px;
 }
-.game-btn img{
-    width:20%;
+
+.game-btn img {
+    width: 20%;
 }
 
 .game-btn:hover {
@@ -313,7 +366,7 @@ nav a {
     padding: 5px 0;
 }
 
-.careers-btn{
+.careers-btn {
     color: #FF42A5;
     border-radius: 20px;
 }
@@ -511,22 +564,28 @@ footer {
         padding: 0;
         margin: 0;
     }
-    .careers-address{
+
+    .careers-address {
         justify-content: space-around;
         gap: 60px;
     }
-    .careers-img{
+
+    .careers-img {
         padding-left: 40px;
         width: 100%;
     }
-    .careers-details-p{
+
+    .careers-details-p {
         font-size: 11px;
         padding-left: 0;
     }
-    .careers-details{
+
+    .careers-details {
         width: 300px;
     }
-    .careers-address-part1 , .careers-address-part2{
+
+    .careers-address-part1,
+    .careers-address-part2 {
         font-size: 11px;
     }
 
@@ -663,13 +722,14 @@ footer {
     .game-btn img {
         width: 25%;
     }
+
     .careers-container {
         flex-direction: column;
-        padding: 50px  0;
+        padding: 50px 0;
         margin: 0;
     }
 
-    .careers-details{
+    .careers-details {
         width: 600px;
     }
 }
