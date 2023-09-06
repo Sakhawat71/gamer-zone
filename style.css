@@ -304,6 +304,7 @@ nav a {
 }
 .banner-images-contener-second{
     width: 50%;
+    height: 500px;
 }
 .banner-images-contener-second img{
     width: 100%;
@@ -354,6 +355,7 @@ nav a {
     align-items: center;
     justify-content: center;
     gap: 60px;
+    margin-top: 50px;
 }
 .careers-details h1{
     font-size: 34px;
@@ -741,6 +743,9 @@ footer {
 /* ****************** responsive for tablet ******************* */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
+    html{
+        overflow:hidden;
+    }
     nav {
         padding: 0 50px;
     }
