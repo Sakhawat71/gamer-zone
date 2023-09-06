@@ -515,6 +515,22 @@ footer {
     .banner-goat {
         font-size: 50px;
     }
+/* *********** we gamer ************* */
+    .we-are-gamer-container{
+        flex-direction: column;
+        align-items: center;
+        margin:  50px 20px;
+    }
+    .we-gamer-img{
+        width: 100%;
+    }
+    .we-gamer-info{
+        width: 100%;
+        text-align:center;
+    }
+
+
+
 
     /* **************** */
     .online-games-container {
@@ -589,13 +605,6 @@ footer {
         font-size: 11px;
     }
 
-
-
-
-
-
-
-
     /* ******************* game box ****************** */
     .game-box-container {
         margin: 30px 10px;
@@ -617,8 +626,6 @@ footer {
     .game-btn img {
         width: 25%;
     }
-
-
 
 
 
@@ -732,4 +739,23 @@ footer {
     .careers-details {
         width: 600px;
     }
+
+    .we-are-gamer-container{
+        flex-direction: column;
+        align-items: center;
+        margin:  50px 20px;
+        justify-content: center;
+        width: 700px;
+    }
+    /* .we-gamer-img{
+        width: 100%;
+    } */
+    .we-gamer-info{
+        width: 100%;
+        text-align:center;
+    } 
+    /* .we-are-gamer-container{
+        width: 100%;
+    } */
+
 }
